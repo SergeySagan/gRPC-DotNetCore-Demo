@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+service WageService {
+  rpc GetWagesBySSN (WageBySSNRequest) returns (WageResponse);
+}
+message WageBySSNRequest {
+  string social_security_number = 1;
+}
+message WageResponse {
+	repeated Wage Wages = 1;
+}
+
+message Wage {
+  string social_security_number = 1;
+  sint32 year = 2;
+  sint32 quarter = 3;
+  double amount = 4;
+}

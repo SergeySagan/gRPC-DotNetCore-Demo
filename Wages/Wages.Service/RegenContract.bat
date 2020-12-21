@@ -1,0 +1,1 @@
+C:\Users\ssagan\.nuget\packages\grpc.tools\2.34.0\tools\windows_x64\protoc.exe --proto_path=ProtocolBufferSpecs --grpc_out=Clients --csharp_out=Models --csharp_opt=file_extension=.Generated.cs Wages.proto --plugin=protoc-gen-grpc=C:\Users\ssagan\.nuget\packages\grpc.tools\2.34.0\tools\windows_x64\grpc_csharp_plugin.exe
